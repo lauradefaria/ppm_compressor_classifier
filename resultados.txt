@@ -1,0 +1,11 @@
+dickens:
+Tempo de codificacao: 26.287 segundos
+Tempo de decodificacao: 25.862 segundos
+Tempo total: 52.149 segundos
+Tamanho original: 9991663 bytes
+Tamanho comprimido: 2546206 bytes
+Taxa de compressao: 0.255
+Reducao: 74.517%
+Comprimento medio da mensagem codificada: 2.038664 bits/simbolo
+Entropia: 2.038664 bits/simbolo
+

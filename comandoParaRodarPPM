@@ -1,0 +1,38 @@
+# ========================================
+# COMANDOS PARA COMPILAR O PROJETO PPM
+# ========================================
+
+# OPÇÃO 1: Usando Makefile (RECOMENDADO)
+make clean && make
+# Ou simplesmente:
+make
+
+# Para executar após compilar:
+make run
+
+# Para executar com arquivo específico:
+make run-file FILE=teste.txt
+
+# ========================================
+# OPÇÃO 2: Comando manual completo (Windows)
+# ========================================
+g++ -std=c++17 -Wall -Wextra -O2 -I. -I./src -I./arithmetic -I./ppm -I./gf src/main.cpp src/ReadData.cpp arithmetic/FrequencyTable.cpp arithmetic/BitIoStream.cpp arithmetic/ArithmeticCoder.cpp ppm/PatriciaTree.cpp gf/generalFunctions.cpp -o main.exe
+
+# ========================================
+# OPÇÃO 3: Para Linux
+# ========================================
+g++ -std=c++17 -Wall -Wextra -O2 -I. -I./src -I./arithmetic -I./ppm -I./gf src/main.cpp src/ReadData.cpp arithmetic/FrequencyTable.cpp arithmetic/BitIoStream.cpp arithmetic/ArithmeticCoder.cpp ppm/PatriciaTree.cpp gf/generalFunctions.cpp -o main
+
+# ========================================
+# Para limpar arquivos compilados:
+# ========================================
+# Windows (PowerShell):
+Remove-Item *.o, */*.o, main.exe -ErrorAction SilentlyContinue
+
+# Linux/Git Bash:
+make clean
+
+# ========================================
+# COMANDO MAIS SIMPLES E EFICIENTE:
+# ========================================
+make
